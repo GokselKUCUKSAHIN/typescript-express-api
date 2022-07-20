@@ -3,9 +3,7 @@ import morgan = require("morgan");
 import cors = require("cors");
 import helmet from "helmet";
 
-import {config} from "dotenv";
-
-config();
+import "dotenv/config";
 
 import {notFound, errorHandler} from "./middlewares";
 import {Express} from "express/ts4.0";
